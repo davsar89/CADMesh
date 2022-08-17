@@ -61,7 +61,6 @@ else()
         assimp_external
         SOURCE_DIR ${PROJECT_SOURCE_DIR}/external/assimp
         GIT_REPOSITORY git@github.com:davsar89/assimp.git
-        GIT_TAG v3.1.1
         CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}
     )
     include_directories(${PROJECT_BINARY_DIR}/include/assimp/include)
