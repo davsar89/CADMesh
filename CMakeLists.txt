@@ -13,6 +13,9 @@ include(ExternalProject)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/Modules ${CMAKE_MODULE_PATH})
 
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -fPIC")
+SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -fPIC")
+
 # Make the include and lib directories in the build area.
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/include)
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
