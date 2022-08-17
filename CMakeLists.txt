@@ -46,7 +46,7 @@ else()
     ExternalProject_Add(
         tetgen_external
         SOURCE_DIR ${PROJECT_SOURCE_DIR}/external/tetgen
-        GIT_REPOSITORY https://github.com/davsar89/tetgen.git
+        GIT_REPOSITORY git@github.com:davsar89/tetgen.git
         CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}
     )
     include_directories(${PROJECT_BINARY_DIR}/include)
@@ -60,7 +60,7 @@ else()
     ExternalProject_Add(
         assimp_external
         SOURCE_DIR ${PROJECT_SOURCE_DIR}/external/assimp
-        GIT_REPOSITORY https://github.com/davsar89/assimp.git
+        GIT_REPOSITORY git@github.com:davsar89/assimp.git
         GIT_TAG v3.1.1
         CMAKE_ARGS -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_BINARY_DIR}
     )
